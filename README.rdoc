@@ -5,11 +5,6 @@ COFFEEing is an simplae application that allows the user to input his/her curren
 Simply enter your zip code, address, city or state location in the search bar, the ten results will show up, showing the name of the shop, and address. The users can also click on the name of the shop to look at the in-depth YELP information about the shop
 
 TECHNOLOGY USED:
-Ruby 2.1.1
-Ruby on Rails 4.1.1
-jQuery
-Yelp API
-To-do List
 
 * Ruby 2.1.1
 
