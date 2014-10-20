@@ -109,7 +109,19 @@ button:active {
 	top:1px;
 }
 
+@media (max-width:500px) {
+	.header {
+		width:50%;
+		font-size: 90%;
+		background-size: 90%;
 
+	}
+
+	.results {
+		font-size: 80%;
+	}
+
+}
 
 
 
