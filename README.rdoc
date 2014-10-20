@@ -16,4 +16,9 @@ TECHNOLOGY USED:
 
 * figaro gem
 
+Simple fork or Download zip, 
+*rake db:create
+*rake db:migrate
+and run the app on localhost:3000
+
 Thank you and enjoy!
