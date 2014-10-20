@@ -1,69 +1,19 @@
+
 <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700' rel='stylesheet' type='text/css'>
 
 	<div class="results">	
 
-		<ul class="list">
+		<ul class="list"> 
 			<h2>Let's Get Coffee!</h2>
-			<li>
-				Name: <a href="<%= @founded.businesses[0].url %>">
-				<%= @founded.businesses[0].name %></a></br>
-				Address: <%= @founded.businesses[0].location.display_address[0] %>
-			</li>
-				</br>
-			<li>
-				Name: <a href="<%= @founded.businesses[1].url %>">
-				<%= @founded.businesses[1].name %></a></br>
-				Address: <%= @founded.businesses[1].location.display_address[0] %>
-			</li>
-				</br>
-			<li>
-				Name: <a href="<%= @founded.businesses[2].url %>">
-				<%= @founded.businesses[2].name %></a></br>
-				Address: <%= @founded.businesses[2].location.display_address[0] %>
-			</li>
-				</br>
-			<li>
-				Name: <a href="<%= @founded.businesses[3].url %>">
-				<%= @founded.businesses[3].name %></a></br>
-				Address: <%= @founded.businesses[3].location.display_address[0] %>
-			</li>
-				</br>
-			<li>
-				Name: <a href="<%= @founded.businesses[4].url %>">
-				<%= @founded.businesses[4].name %></a></br>
-				Address: <%= @founded.businesses[4].location.display_address[0] %>
-			</li>
-				</br>
-			<li>
-				Name: <a href="<%= @founded.businesses[5].url %>">
-				<%= @founded.businesses[5].name %></a></br>
-				Address: <%= @founded.businesses[5].location.display_address[0] %>
-			</li>
-				</br>
-			<li>
-				Name: <a href="<%= @founded.businesses[6].url %>">
-				<%= @founded.businesses[6].name %></a></br>
-				Address: <%= @founded.businesses[6].location.display_address[0] %>
-			</li>
-				</br>
-			<li>
-				Name: <a href="<%= @founded.businesses[7].url %>">
-				<%= @founded.businesses[7].name %></a></br>
-				Address: <%= @founded.businesses[7].location.display_address[0] %>
-			</li>
-				</br>
-			<li>
-				Name: <a href="<%= @founded.businesses[8].url %>">
-				<%= @founded.businesses[8].name %></a></br>
-				Address: <%= @founded.businesses[8].location.display_address[0] %>
-			</li>
-				</br>
-			<li>
-				Name: <a href="<%= @founded.businesses[9].url %>">
-				<%= @founded.businesses[9].name %></a></br>
-				Address: <%= @founded.businesses[9].location.display_address[0] %>
-			</li>
-				</br>
+			<% @founded.businesses.each do |shops|%>
+				<li>
+	        Name: <a href="<%= shops.url %>">
+	        <%= shops.name %></a>
+	        <br>
+	        Address: <%= shops.location.display_address[0] %><br>
+	        <br>
+	        <%end%>
+	    	</li>
 			    <%= link_to '<button type="button">Search Again</button>'.html_safe, root_path %>
 		</ul>
 	</div>	
