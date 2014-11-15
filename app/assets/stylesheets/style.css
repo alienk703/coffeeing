@@ -12,7 +12,7 @@ h1 {
 }
 
 body {
-	background: url(http://www.thesleuthjournal.com/wp-content/uploads/2014/07/coffee.jpg)no-repeat ;
+	background: url(http://i.imgur.com/T6Pwqxv.png)no-repeat ;
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -33,8 +33,9 @@ input {
 }
 
 .header {
+	color: brown;
 	padding: 1em;
-	background-color:rgba(254, 228, 170, 0.5);	
+	background-color:rgba(254, 228, 170, 0.7);	
 	border-radius: 15px;
 	font-family: 'Rokkitt', serif;
 	margin-left: 4em;
@@ -44,7 +45,8 @@ input {
 }
 
 .results {
-	background-color:rgba(254, 228, 170, 0.5);	
+	color: brown;
+	background-color:rgba(254, 228, 170, 0.7);	
 	border-radius: 15px;
 	font-family: 'Rokkitt', serif;
 	margin-left: 4em;
@@ -110,6 +112,13 @@ button:active {
 }
 
 @media (max-width:500px) {
+	h1 {
+		font-size: 200%;
+	}
+
+	label {
+		font-size: 70%;
+	}
 	.header {
 		width:50%;
 		font-size: 90%;
