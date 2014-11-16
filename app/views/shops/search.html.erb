@@ -6,7 +6,7 @@
 			<h2>Let's Get Coffee!</h2>
 			<% @founded.businesses.each do |shops|%>
 				<li>
-	        Name: <a href="<%= shops.url %>">
+	        Name: <a href="<%= shops.url %>" target="_blank">
 	        <%= shops.name %></a>
 	        <br>
 	        Address: <%= shops.location.display_address[0] %><br>
